@@ -1,5 +1,5 @@
 const defaultTheme = require('tailwindcss/defaultTheme');
-const colors=require('tailwindcss/colors');
+const colors = require('tailwindcss/colors');
 module.exports = {
     purge: [
         './vendor/laravel/framework/src/Illuminate/Pagination/resources/views/*.blade.php',
@@ -16,16 +16,18 @@ module.exports = {
                 white: colors.white,
                 gray: colors.trueGray,
                 "gray-background": '#f7f8fc',
-                "blue":"#328af1"
+                "blue": "#328af1",
+                "blue-hover": "#2879bd"
             },
-            spacing:{
-              70:'17.5rem',
-                175:'43.75rem',
-                44:'11rem',
+            spacing: {
+                22: '5.5rem',
+                70: '17.5rem',
+                175: '43.75rem',
+                44: '11rem',
 
             },
-            maxWidth:{
-              custom:'68.5rem'
+            maxWidth: {
+                custom: '68.5rem'
             },
             fontFamily: {
                 sans: ['Open Sans', ...defaultTheme.fontFamily.sans],
@@ -42,5 +44,5 @@ module.exports = {
         },
     },
 
-    plugins: [require('@tailwindcss/forms'),require('@tailwindcss/line-clamp')],
+    plugins: [require('@tailwindcss/forms'), require('@tailwindcss/line-clamp')],
 };
